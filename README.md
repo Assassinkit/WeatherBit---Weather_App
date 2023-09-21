@@ -1,8 +1,10 @@
 # WeatherWidgetApp
 
+## Development server![Screenshot (336)](https://github.com/Assassinkit/WeatherBit---Weather_App/assets/77069961/d258710e-a21c-4e6b-99bb-710b21121f4d)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
 
-## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
