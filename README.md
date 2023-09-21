@@ -10,6 +10,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Code scaffolding
 
+
+https://github.com/Assassinkit/WeatherBit---Weather_App/assets/77069961/68a91b90-91a9-4d82-bed7-494ac640246e
+
+
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
