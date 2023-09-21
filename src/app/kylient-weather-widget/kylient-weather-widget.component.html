@@ -1,0 +1,35 @@
+<div class="slide-169-1">
+
+  <!-- Card View As Weather Widget -->
+  <div class="component-1 outline">
+    <!-- Wind Speed -->
+    <div class="wind">Wind:</div>
+    <div class="ms">{{ currentWeatherData?.data[0].wind_spd }} m/s</div>
+    <!-- Precipitation Data -->
+    <div class="mmhr">{{ currentWeatherData?.data[0].precip }} mm/hr</div>
+    <!-- Pressure Data -->
+    <div class="mb">{{ currentWeatherData?.data[0].pres }} mb</div>
+    <div class="precip">Precip:</div>
+    <div class="pressure">Pressure:</div>
+    <!-- Current Weather Icon -->
+    <img class="component-1-child" alt="" [src]="getWeatherIconUrl(currentWeatherData)" />
+
+    <!-- And rest 5 day Forecasted Weather Report   -->
+    <div *ngFor="let day of forecastData.data.slice(0,6); let i = index">
+      <div class="weather-next-day{{ i }}">{{ day.datetime | convertToDay }}</div>
+      <img class="component-1-item{{ i }}" alt="" [src]="getWeatherIconUrlForDay(day)" />
+      <div class="weather-range{{ i }}">{{ day.app_max_temp }} °C / {{ day.app_min_temp }} °C </div>
+    </div>
+
+    <!-- For Displaying the Current Weather Report -->
+    <!-- Temperature Description -->
+    <div class="weather-desc">{{ currentWeatherData?.data[0].weather.description }}</div>
+    <!-- Temperature Data to show -->
+    <b class="b">{{ currentWeatherData?.data[0].temp }}°C</b>
+    <!-- City Name with Country Code -->
+    <b class="name-of-place">{{ currentWeatherData?.data[0]?.city_name }}, {{ currentWeatherData?.data[0]?.country_code }}</b>
+
+  </div>
+</div>
+
+
